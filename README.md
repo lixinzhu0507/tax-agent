@@ -67,12 +67,12 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.example .env
-# 编辑 .env，填入你的 Anthropic API Key
+# 编辑 .env，填入你的 DeepSeek API Key
 ```
 
 `.env` 内容：
 ```
-ANTHROPIC_API_KEY=sk-ant-...
+DEEPSEEK_API_KEY=sk-...
 ```
 
 ---
@@ -253,7 +253,7 @@ python main.py
 ## 技术栈
 
 - **Python 3.11+**
-- **anthropic SDK** — Claude claude-sonnet-4-20250514
+- **openai SDK** — 对接 DeepSeek API（`deepseek-chat`，OpenAI 兼容格式）
 - **pypdf** — PDF 文字提取
 - **pytesseract + Pillow** — 图片 OCR
 - **pandas** — CSV 数据处理
